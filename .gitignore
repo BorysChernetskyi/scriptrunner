@@ -1,5 +1,6 @@
 /.idea/
 /src/
 /test/
+/lib/
 /target
 example-jira-project.iml
