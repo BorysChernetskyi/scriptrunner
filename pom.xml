@@ -75,7 +75,7 @@
         <dependency>
             <groupId>com.onresolve.scriptrunner.api</groupId>
             <artifactId>scriptrunner-api</artifactId>
-            <version>${jira.sr.version}</version>
+            <version>${scriptrunner.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>jta</groupId>
@@ -90,7 +90,7 @@
         <dependency>
             <groupId>com.onresolve.jira.groovy</groupId>
             <artifactId>groovyrunner</artifactId>
-            <version>${jira.sr.version}</version>
+            <version>${scriptrunner.version}</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
