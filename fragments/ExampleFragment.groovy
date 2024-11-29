@@ -4,7 +4,7 @@ import com.atlassian.jira.issue.Issue
 import com.atlassian.jira.plugin.webfragment.model.JiraHelper
 import com.atlassian.servicedesk.api.requesttype.RequestType
 
-class ExampleBehaviour extends Script {
+class ExampleFragment extends Script {
 
     @Override
     run() {
