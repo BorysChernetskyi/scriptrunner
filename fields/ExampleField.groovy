@@ -7,7 +7,7 @@ import com.atlassian.jira.user.ApplicationUser
 class ExampleField extends Script {
 
     @Override
-    Object run() {
+    run() {
 
         //Interface ApplicationUser
         /**
