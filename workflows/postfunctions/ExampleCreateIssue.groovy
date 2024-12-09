@@ -85,6 +85,8 @@ class ExampleCreateIssue extends Script {
          * @param issue The newly created issue object. Allows access to issue details such as key, fields, etc.
          * @throws Exception if any error occurs during the execution of the closure.
          */
-        Closure doAfterCreate = getProperty("doAfterCreate") as Closure
-        }
+        setProperty("doAfterCreate",[
+                //code
+        ])
     }
+}
