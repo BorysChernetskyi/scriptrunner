@@ -1,6 +1,8 @@
 package listeners
 
 import com.atlassian.jira.event.issue.IssueEvent
+import com.atlassian.jira.issue.MutableIssue
+import com.atlassian.jira.issue.comments.Comment
 import com.riadalabs.jira.plugins.insight.services.events.objects.InsightObjectAsyncEvent
 import com.riadalabs.jira.plugins.insight.services.events.objects.event.InsightObjectCreatedEvent
 import com.riadalabs.jira.plugins.insight.services.events.objects.event.InsightObjectUpdatedEvent
@@ -47,7 +49,8 @@ class ExampleListener extends Script {
          *   Retrieves the worklog associated with the event.
          */
         IssueEvent issueEvent = getProperty("event") as IssueEvent
-
+        MutableIssue issue = getProperty("issue") as MutableIssue
+        Comment comment = getProperty("comment") as Comment
         InsightObjectAsyncEvent assetEvent = getProperty("event") as InsightObjectAsyncEvent
 
         if ( assetEvent instanceof InsightObjectCreatedEvent ){
