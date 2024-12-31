@@ -2,9 +2,10 @@ package workflows.validators
 
 import com.atlassian.jira.issue.Issue
 import com.atlassian.jira.issue.MutableIssue
+import com.example.jira.plugin.runner.workflow.validator.ValidatorComponent
 import com.opensymphony.workflow.InvalidInputException
 
-class ExampleValidator extends Script {
+class ExampleValidator extends ValidatorComponent {
 
     @Override
     run() {

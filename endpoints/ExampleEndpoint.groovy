@@ -1,7 +1,7 @@
 package endpoints
 
 import com.atlassian.jira.component.ComponentAccessor
-import com.onresolve.scriptrunner.runner.rest.common.CustomEndpointDelegate
+import com.example.jira.plugin.runner.endpoint.EndpointComponent
 import org.apache.log4j.Logger
 import javax.servlet.http.HttpServletRequest
 import javax.ws.rs.core.MultivaluedMap
@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response
 import com.atlassian.sal.api.user.UserManager
 import com.atlassian.sal.api.user.UserProfile
 
-class ExampleEndpoint extends CustomEndpointDelegate {
+class ExampleEndpoint extends EndpointComponent {
 
     private static final Logger log = Logger.getLogger(this)
     private static final UserManager userManager = ComponentAccessor.getOSGiComponentInstanceOfType(UserManager)
