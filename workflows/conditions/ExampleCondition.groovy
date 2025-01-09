@@ -1,9 +1,10 @@
 package workflows.conditions
 
 import com.atlassian.jira.issue.Issue
+import com.example.jira.plugin.runner.workflow.condition.ConditionComponent
 import groovyjarjarantlr4.v4.runtime.misc.Args
 
-class ExampleCondition extends Script {
+class ExampleCondition extends ConditionComponent {
 
     @Override
     run() {

@@ -2,8 +2,9 @@ package workflows.postfunctions
 
 import com.atlassian.jira.issue.ModifiedValue
 import com.atlassian.jira.issue.MutableIssue
+import com.example.jira.plugin.runner.workflow.postfunktion.PostfunctionComponent
 
-class ExamplePostfunction extends Script {
+class ExamplePostfunction extends PostfunctionComponent {
 
     @Override
     run() {

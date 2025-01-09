@@ -3,6 +3,7 @@ package listeners
 import com.atlassian.jira.event.issue.IssueEvent
 import com.atlassian.jira.issue.MutableIssue
 import com.atlassian.jira.issue.comments.Comment
+import com.example.jira.plugin.runner.listener.ListenerComponent
 import com.riadalabs.jira.plugins.insight.services.events.objects.InsightObjectAsyncEvent
 import com.riadalabs.jira.plugins.insight.services.events.objects.event.InsightObjectCreatedEvent
 import com.riadalabs.jira.plugins.insight.services.events.objects.event.InsightObjectUpdatedEvent
@@ -13,7 +14,7 @@ import com.riadalabs.jira.plugins.insight.services.events.objects.event.InsightO
  * This variable is only present in the context of event listeners and
  * holds the {@link java.lang.Object} representing the specific event.
  */
-class ExampleListener extends Script {
+class ExampleListener extends ListenerComponent {
 
     @Override
     run() {

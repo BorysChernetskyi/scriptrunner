@@ -1,6 +1,8 @@
 package jobs
 
-class ExampleJob extends Script {
+import com.example.jira.plugin.runner.job.JobComponent
+
+class ExampleJob extends JobComponent {
 
     @Override
     run() {

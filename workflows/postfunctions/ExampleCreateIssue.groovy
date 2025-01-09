@@ -3,8 +3,9 @@ package workflows.postfunctions
 import com.atlassian.jira.issue.Issue
 import com.atlassian.jira.issue.MutableIssue
 import com.atlassian.jira.user.ApplicationUser
+import com.example.jira.plugin.runner.workflow.postfunktion.PostfunctionComponent
 
-class ExampleCreateIssue extends Script {
+class ExampleCreateIssue extends PostfunctionComponent {
 
     @Override
     run() {

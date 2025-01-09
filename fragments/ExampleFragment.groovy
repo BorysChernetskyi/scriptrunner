@@ -3,8 +3,9 @@ package fragments
 import com.atlassian.jira.issue.Issue
 import com.atlassian.jira.plugin.webfragment.model.JiraHelper
 import com.atlassian.servicedesk.api.requesttype.RequestType
+import com.example.jira.plugin.runner.fragment.FragmentComponent
 
-class ExampleFragment extends Script {
+class ExampleFragment extends FragmentComponent {
 
     @Override
     run() {
