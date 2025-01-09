@@ -1,8 +1,8 @@
 package behaviours
 
-import com.onresolve.jira.groovy.user.FieldBehaviours
+import com.example.jira.plugin.runner.behaviour.BehaviourComponent
 
-class ExampleBehaviour extends FieldBehaviours {
+class ExampleBehaviour extends BehaviourComponent {
 
     @Override
     run() {
