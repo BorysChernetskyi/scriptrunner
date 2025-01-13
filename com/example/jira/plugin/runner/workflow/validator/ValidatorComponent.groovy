@@ -1,6 +1,8 @@
 package com.example.jira.plugin.runner.workflow.validator
 
-class ValidatorComponent extends Script {
+import com.example.jira.plugin.runner.workflow.WorkflowComponent
+
+class ValidatorComponent extends WorkflowComponent {
 
     @Override
     run() {
